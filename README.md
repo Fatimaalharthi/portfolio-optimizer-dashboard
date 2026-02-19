@@ -195,8 +195,25 @@ portfolio-optimizer-dashboard/
 
 ------------------------------------------------------------------------
 
+## Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](images/dashboard_overview.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+### Portfolio Optimization Section
+![Optimization Section](images/optimization_section.png)
+
+### Efficient Frontier
+![Efficient Frontier](images/efficient_frontier.png)
+
+------------------------------------------------------------------------
+
 ## Live Dashboard
 
+The application is deployed via Streamlit Community Cloud.
 (Add your deployed Streamlit link here)
 
 ------------------------------------------------------------------------
