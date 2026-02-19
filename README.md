@@ -85,8 +85,8 @@ time range.
 
 ### 2. Data Cleaning & Preparation
 
--   Missing values are forward-filled\
--   Incomplete records are removed\
+-   Missing values are forward-filled
+-   Incomplete records are removed
 -   Data integrity is validated before analysis
 
 ### 3. Return & Risk Calculations
@@ -94,9 +94,9 @@ time range.
 Daily returns are calculated and annualized using standard financial
 formulas:
 
--   Annualized Return\
--   Annualized Volatility\
--   Sharpe Ratio\
+-   Annualized Return
+-   Annualized Volatility
+-   Sharpe Ratio
 -   Maximum Drawdown
 
 ### 4. Diversification Analysis
@@ -108,7 +108,7 @@ Lower correlations indicate stronger diversification benefits.
 
 Two optimization strategies are implemented:
 
--   **Maximum Sharpe Ratio**\
+-   **Maximum Sharpe Ratio**
 -   **Minimum Volatility**
 
 Optimization is solved using constrained numerical optimization (SciPy
@@ -124,7 +124,7 @@ and volatility.
 
 ## Dashboard Features
 
--   Interactive asset selection (3--8 assets)
+-   Interactive asset selection (3-8 assets)
 -   Adjustable date range
 -   Customizable risk-free rate
 -   Optimization objective selection
@@ -167,22 +167,31 @@ and volatility.
 
 ## Technical Stack
 
--   Python\
--   Streamlit\
--   yfinance\
--   pandas\
--   numpy\
--   plotly\
+-   Python
+-   Streamlit
+-   yfinance
+-   pandas
+-   numpy
+-   plotly
 -   scipy
 
 ------------------------------------------------------------------------
 
 ## Repository Structure
 
-portfolio-optimizer-dashboard/ │ ├── app.py ├── requirements.txt ├──
-README.md │ ├── /data │ └── cached_prices.csv │ ├── /images │ ├──
-dashboard_overview.png │ ├── correlation_heatmap.png │ └──
-optimization_section.png
+portfolio-optimizer-dashboard/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── /data
+│   └── cached_prices.csv
+│
+├── /images
+│   ├── dashboard_overview.png
+│   ├── optimization_section.png
+│   └── correlation_heatmap.png
 
 ------------------------------------------------------------------------
 
