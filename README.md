@@ -1,4 +1,4 @@
-# 📈 Portfolio Optimizer & Risk Intelligence Dashboard
+#   Portfolio Optimizer & Risk Intelligence Dashboard
 
 ### Saudi & Global Market Allocation Tool
 
