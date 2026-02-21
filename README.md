@@ -1,229 +1,50 @@
-#   Portfolio Optimizer & Risk Intelligence Dashboard
-
-### Saudi & Global Market Allocation Tool
-
-------------------------------------------------------------------------
-
-## Executive Summary
-
-This project delivers a live, interactive financial dashboard designed
-to support data-driven portfolio allocation decisions. It enables
-investors to analyze asset performance, assess portfolio risk, evaluate
-diversification benefits, and construct optimized allocations using
-publicly available market data.
-
-The dashboard integrates financial analytics with executive-level
-visualization to answer a central investment question:
-
-> How can capital be optimally allocated across Saudi and global assets
-> to maximize return while managing risk?
-
-Through performance metrics, risk diagnostics, correlation analysis,
-Monte Carlo simulations, and constrained portfolio optimization, the
-application transforms historical data into actionable allocation
-insights.
-
-This tool is suitable for investors, analysts, and decision-makers
-seeking structured portfolio intelligence rather than static reporting.
-
-------------------------------------------------------------------------
+# Business Performance Intelligence Dashboard
 
 ## Project Overview
 
-This dashboard provides an interactive environment for evaluating
-financial assets across Saudi and global markets. It goes beyond simple
-trend visualization by integrating portfolio theory, risk-adjusted
-performance metrics, and optimization modeling into a single analytical
-framework.
+This project presents an interactive financial and operational dashboard designed to analyze business performance using retail sales data. The objective of the dashboard is to transform raw transactional data into clear, actionable insights that support decision-making for non-technical stakeholders.
 
-The application is fully interactive, live-deployable, and built to
-support real-world investment decisions.
+The dashboard focuses on evaluating revenue performance, profitability trends, and operational drivers across product categories and geographic regions. By combining key performance indicators with interactive visualizations, the solution enables users to quickly understand business health, identify performance patterns, and explore areas of opportunity or risk.
 
-Target audience includes:
+The project was developed as part of a practical assessment for the Data Analyst position, demonstrating analytical thinking, data visualization skills, and the ability to communicate insights effectively.
 
--   Individual investors
--   Portfolio managers
--   Financial analysts
--   Investment decision stakeholders
-
-The system emphasizes clarity, usability, and analytical transparency.
-
-------------------------------------------------------------------------
+---
 
 ## Data Source
 
-All financial data is sourced from **Yahoo Finance**, accessed using the
-Python library `yfinance`.
+The analysis uses the **Sample Superstore dataset**, a widely adopted public dataset commonly used for business intelligence and analytics training. The dataset simulates retail transactional data and includes information on orders, sales, profit, product categories, customer segments, and regional performance.
 
-The dataset includes daily adjusted closing prices for:
+The dataset contains:
 
--   Saudi equities (Tadawul)
--   Global indices (S&P 500, Nasdaq)
--   Commodities (Gold, Oil)
--   Fixed income proxies (US Treasury ETF)
--   Cryptocurrency (Bitcoin)
+- Order dates and transaction records  
+- Sales revenue and profit values  
+- Product categories and sub-categories  
+- Regional market performance  
+- Customer and order-level information  
 
-Data characteristics:
+This structure allows realistic business performance analysis and KPI development.
 
--   Publicly available
--   Daily frequency
--   Historical time series
--   No proprietary or confidential sources used
+---
 
-For reproducibility and compliance with submission requirements, the
-dashboard exports a cached CSV file into the `/data` folder during
-execution.
+## Steps & Methodology
 
-------------------------------------------------------------------------
+The project followed a structured analytical workflow:
 
-## Methodology & Analytical Approach
+First, the dataset was connected to Google Looker Studio and reviewed to ensure appropriate data types and aggregation logic. Key business metrics were defined to reflect organizational performance, including total sales, total profit, profit margin, total orders, and average order value.
 
-### 1. Data Collection
+Next, the dashboard layout was designed using a clear visual hierarchy to guide stakeholder interpretation. A large performance trend visualization was placed at the center of the dashboard to highlight time-based patterns, supported by category and regional analyses to explain performance drivers.
 
-Market data is dynamically retrieved based on user-selected assets and
-time range.
+Interactive filters were implemented to allow users to dynamically explore results by region, category, and time period. Visualization choices prioritized clarity, consistency, and executive readability rather than visual complexity.
 
-### 2. Data Cleaning & Preparation
+The design approach emphasized minimalism, consistent color usage, and structured sections to ensure the dashboard remains intuitive for decision-makers.
 
--   Missing values are forward-filled
--   Incomplete records are removed
--   Data integrity is validated before analysis
-
-### 3. Return & Risk Calculations
-
-Daily returns are calculated and annualized using standard financial
-formulas:
-
--   Annualized Return
--   Annualized Volatility
--   Sharpe Ratio
--   Maximum Drawdown
-
-### 4. Diversification Analysis
-
-A correlation matrix is computed to evaluate cross-asset relationships.
-Lower correlations indicate stronger diversification benefits.
-
-### 5. Portfolio Optimization
-
-Two optimization strategies are implemented:
-
--   **Maximum Sharpe Ratio**
--   **Minimum Volatility**
-
-Optimization is solved using constrained numerical optimization (SciPy
-SLSQP).
-
-### 6. Monte Carlo Simulation
-
-Thousands of random portfolio allocations are simulated to generate an
-Efficient Frontier, illustrating the trade-off between expected return
-and volatility.
-
-------------------------------------------------------------------------
-
-## Dashboard Features
-
--   Interactive asset selection (3-8 assets)
--   Adjustable date range
--   Customizable risk-free rate
--   Optimization objective selection
--   Monte Carlo simulation control
--   KPI summary metrics
--   Cumulative performance comparison
--   Volatility ranking visualization
--   Correlation heatmap
--   Drawdown analysis
--   Efficient frontier visualization
--   Optimized portfolio weights display
--   Stakeholder-ready insights & recommendations
--   Assumptions and limitations disclosure
-
-------------------------------------------------------------------------
+---
 
 ## Key Insights
 
--   High-return assets often exhibit higher volatility and deeper
-    drawdowns.
--   Diversification improves when assets demonstrate low correlation.
--   Equal-weight portfolios are simple but rarely optimal.
--   Optimized portfolios can significantly improve risk-adjusted
-    performance.
--   Maximum Sharpe allocations distribute capital across uncorrelated
-    assets.
+The dashboard reveals several important business insights:
 
-------------------------------------------------------------------------
+- Technology products generate the strongest profitability compared to other categories.
+- Sales performance varies significantly across regions, indicating potential differences in marke
 
-## Assumptions & Limitations
-
--   Historical performance does not guarantee future results.
--   Annualization assumes approximately 252 trading days.
--   Dividends, taxes, and transaction costs are excluded.
--   Optimization assumes stable mean and covariance estimates.
--   Cryptocurrency operates 24/7, which may slightly affect
-    annualization comparisons.
-
-------------------------------------------------------------------------
-
-## Technical Stack
-
--   Python
--   Streamlit
--   yfinance
--   pandas
--   numpy
--   plotly
--   scipy
-
-------------------------------------------------------------------------
-
-## Repository Structure
-
-portfolio-optimizer-dashboard/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── /data
-│   └── cached_prices.csv
-│
-├── /images
-│   ├── dashboard_overview.png
-│   ├── correlation_heatmap.png
-│   └── optimization_section.png
-
-------------------------------------------------------------------------
-
-## Screenshots
-
-### Dashboard Overview
-![Dashboard Overview](images/dashboard_overview.png)
-
-### Correlation Heatmap
-![Correlation Heatmap](images/correlation_heatmap.png)
-
-### Portfolio Optimization Section
-![Optimization Section](images/optimization_section.png)
-
-### Efficient Frontier
-![Efficient Frontier](images/efficient_frontier.png)
-
-------------------------------------------------------------------------
-
-## Live Dashboard
-
-The application is deployed via Streamlit Community Cloud.
-
-(Add your deployed Streamlit link here)
-
-------------------------------------------------------------------------
-
-## Conclusion
-
-This project demonstrates applied financial analytics, portfolio theory,
-optimization modeling, and executive-level data visualization.
-
-It provides an interactive investment decision-support system that
-integrates performance analysis, diversification modeling, and
 optimization into a unified framework.
