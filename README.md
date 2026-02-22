@@ -13,7 +13,6 @@ The dashboard focuses on providing a clear overview of revenue and profitability
 The analysis uses the **Sample Superstore dataset**, a publicly available dataset commonly used for learning and practicing business intelligence workflows. The dataset represents simulated retail transactions and includes information such as order dates, sales values, profit, product categories, customer segments, and regional markets.
 
 Dataset source:  
-https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
 [Sample Superstore Dataset – Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 
 This structure makes it suitable for exploring sales performance, profitability patterns, and operational comparisons across different business dimensions.
