@@ -2,30 +2,31 @@
 
 ## Project Overview
 
-This project presents an interactive business performance dashboard developed to analyze retail sales data and provide a structured view of operational performance. The objective of the dashboard is to organize transactional information into clear and interpretable insights that support understanding of revenue behavior, profitability trends, and performance differences across business segments.
+This project explores business performance using an interactive dashboard built on retail sales transaction data. The goal was to organize raw operational data into a format that makes performance easier to understand and explore through visual analysis.
 
-The dashboard combines key performance indicators with interactive visualizations to offer both a high-level summary and detailed analytical perspectives. Users can evaluate overall business activity, observe performance trends over time, and explore how product categories and geographic regions contribute to financial outcomes. The design prioritizes clarity, consistency, and ease of interpretation to ensure the analysis remains accessible to both technical and non-technical audiences.
+The dashboard focuses on providing a clear overview of revenue and profitability while allowing users to examine how results differ across product categories and regions. Instead of presenting isolated charts, the dashboard was designed to guide users from a high-level summary toward more detailed analysis, helping them understand both overall outcomes and the factors influencing performance.
 
 ---
 
 ## Data Source
 
-The analysis is based on the **Sample Superstore dataset**, a publicly available dataset commonly used for business intelligence and analytics practice. The dataset represents simulated retail transactions and includes detailed information about orders, sales revenue, profit values, product categories, customer segments, and regional markets.
+The analysis uses the **Sample Superstore dataset**, a publicly available dataset commonly used for learning and practicing business intelligence workflows. The dataset represents simulated retail transactions and includes information such as order dates, sales values, profit, product categories, customer segments, and regional markets.
 
 Dataset source:  
+https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
 [Sample Superstore Dataset – Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 
-The dataset structure enables performance evaluation across time, categories, and regions using transactional financial metrics such as sales and profit.
+This structure makes it suitable for exploring sales performance, profitability patterns, and operational comparisons across different business dimensions.
 
 ---
 
 ## Steps & Methodology
 
-The project began with connecting and reviewing the dataset in Google Looker Studio to confirm correct data types and aggregation behavior. Key performance indicators were defined to summarize business outcomes, including total sales, total profit, profit margin, total orders, and average order value.
+The dataset was connected directly to Google Looker Studio, where fields were reviewed to confirm correct data types and aggregation behavior. Key performance indicators were then defined to summarize overall activity, including total sales, total profit, profit margin, total orders, and average order value.
 
-A clear visual hierarchy guided the dashboard design. Summary indicators are presented at the top to provide an immediate overview, followed by a time-series visualization showing performance trends over time. Additional charts analyze results by product category and region to help explain differences in performance. A scatter visualization was included to explore the relationship between sales and profitability at the sub-category level. A detailed transaction table allows users to view the underlying records supporting the analysis.
+The dashboard layout follows a simple analytical flow. Summary metrics appear first to provide context, followed by a time-based visualization showing how performance changes over time. Additional charts break down results by category and region to help explain differences in performance. A scatter chart was added to compare sales and profit at a more detailed level, making it easier to observe variations in profitability between product segments. A transaction table is included to allow users to view the underlying records behind the visual summaries.
 
-Interactive filters were added to enable exploration of results by region, category, and date range, allowing users to adjust the analysis according to specific interests or questions.
+Filters were implemented to allow users to interact with the dashboard by selecting regions, categories, or time periods, making the analysis flexible and exploratory.
 
 ---
 
@@ -37,17 +38,15 @@ Interactive filters were added to enable exploration of results by region, categ
 
 ## Key Insights
 
-The dashboard highlights several observable patterns within the dataset. Technology products tend to show stronger profitability compared to other categories, while regional performance varies across markets. The analysis also shows that higher sales volumes do not always correspond to higher profit margins, suggesting differences in cost structure or discounting behavior across products.
+Several patterns can be observed from the dashboard. Technology products generally show stronger profitability compared to other categories, while performance varies between regions. The analysis also shows that higher sales do not always lead to higher profit, suggesting that discounting or cost differences may influence margins across products.
 
-These observations demonstrate how visual analytics can help identify performance patterns and support further business investigation.
+These observations demonstrate how interactive dashboards can help surface patterns that may not be immediately visible in raw data.
 
 ---
 
 ## Live Dashboard Link
 
-The interactive dashboard can be accessed through the following link:
-
-**Live Dashboard:**  
+The interactive dashboard can be accessed here:
 [(https://lookerstudio.google.com/s/iWrjxy-Ce8g)]
 
 ## Assumptions & Limitations
