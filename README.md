@@ -2,11 +2,9 @@
 
 ## Project Overview
 
-This project presents an interactive financial and operational dashboard designed to analyze business performance using retail sales data. The objective of the dashboard is to transform raw transactional data into clear, actionable insights that support decision-making for non-technical stakeholders.
+This project presents an interactive business performance dashboard designed to analyze retail sales operations and profitability using transactional data. The objective of the dashboard is to transform raw business records into meaningful insights that support data-driven decision-making and provide a clear understanding of organizational performance.
 
-The dashboard focuses on evaluating revenue performance, profitability trends, and operational drivers across product categories and geographic regions. By combining key performance indicators with interactive visualizations, the solution enables users to quickly understand business health, identify performance patterns, and explore areas of opportunity or risk.
-
-The project was developed as part of a practical assessment for the Data Analyst position, demonstrating analytical thinking, data visualization skills, and the ability to communicate insights effectively.
+The dashboard delivers an executive-level view of key financial and operational metrics by combining summarized performance indicators with interactive visual analysis. It allows stakeholders to evaluate revenue trends, profitability patterns, and operational performance across product categories and geographic regions. The design emphasizes clarity, accessibility, and structured storytelling so that insights can be easily interpreted by both technical and non-technical users.
 
 ---
 
@@ -18,7 +16,9 @@ The project was developed as part of a practical assessment for the Data Analyst
 
 ## Data Source
 
-The analysis uses the **Sample Superstore dataset**, a widely adopted public dataset commonly used for business intelligence and analytics training. The dataset simulates retail transactional data and includes information on orders, sales, profit, product categories, customer segments, and regional performance.
+The analysis is based on the **Sample Superstore dataset**, a publicly available dataset commonly used for business intelligence and analytics practice. The dataset simulates retail transaction data and contains detailed information related to orders, sales revenue, profit performance, product categories, customer segments, and regional markets.
+
+The dataset includes order-level transactional records with associated financial metrics such as sales and profit, enabling realistic evaluation of business performance over time. Its structure supports the development of performance indicators and comparative analysis across regions and product segments.
 
 The dataset contains:
 
@@ -34,21 +34,30 @@ This structure allows realistic business performance analysis and KPI developmen
 
 ## Steps & Methodology
 
-The project followed a structured analytical workflow:
+The project followed a structured analytical workflow beginning with data preparation and validation within Google Looker Studio. Data fields were reviewed to ensure appropriate data types and aggregation behavior, allowing accurate calculation of business metrics.
 
-First, the dataset was connected to Google Looker Studio and reviewed to ensure appropriate data types and aggregation logic. Key business metrics were defined to reflect organizational performance, including total sales, total profit, profit margin, total orders, and average order value.
+Key performance indicators were then defined to represent organizational outcomes, including total sales, total profit, profit margin, total orders, and average order value. These indicators were positioned at the top of the dashboard to provide an immediate overview of business health.
 
-Next, the dashboard layout was designed using a clear visual hierarchy to guide stakeholder interpretation. A large performance trend visualization was placed at the center of the dashboard to highlight time-based patterns, supported by category and regional analyses to explain performance drivers.
+A visual hierarchy was applied to guide interpretation. A time-series visualization was used to highlight performance trends over time, followed by category and regional analyses to explain performance drivers. A scatter visualization was implemented to examine the relationship between sales and profitability at a more detailed level, helping identify areas where high revenue does not necessarily produce strong margins. A detailed transaction table was included to provide transparency and allow validation of the underlying data.
 
-Interactive filters were implemented to allow users to dynamically explore results by region, category, and time period. Visualization choices prioritized clarity, consistency, and executive readability rather than visual complexity.
-
-The design approach emphasized minimalism, consistent color usage, and structured sections to ensure the dashboard remains intuitive for decision-makers.
-
----
+Interactive filters were incorporated to enable users to dynamically explore results by region, category, and time period, enhancing analytical flexibility and usability.
 
 ## Key Insights
 
-The dashboard reveals several important business insights:
+The analysis reveals several important observations. Technology products demonstrate stronger profitability compared to other categories, while regional performance differences suggest variations in operational efficiency and market behavior. The dashboard also highlights instances where products with high sales volumes generate relatively lower profit margins, indicating potential opportunities for pricing optimization or cost management improvements.
 
-- Technology products generate the strongest profitability compared to other categories.
-- Sales performance varies significantly across regions, indicating potential differences in marke
+These insights illustrate how interactive dashboards can support strategic planning by connecting high-level performance indicators with detailed operational analysis.
+
+
+---
+
+## Live Dashboard Link
+
+The interactive dashboard can be accessed through the following link:
+
+**Live Dashboard:**  
+[(https://lookerstudio.google.com/s/iWrjxy-Ce8g)]
+
+## Assumptions & Limitations
+
+The dataset represents simulated retail operations and therefore does not include external business factors such as operational costs, logistics expenses, or market conditions. Profit values reflect transactional profitability rather than complete financial accounting measures. Additionally, the analysis assumes consistent data quality across regions and time periods.
