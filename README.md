@@ -52,5 +52,3 @@ The dashboard reveals several important business insights:
 
 - Technology products generate the strongest profitability compared to other categories.
 - Sales performance varies significantly across regions, indicating potential differences in marke
-
-optimization into a unified framework.
